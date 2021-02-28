@@ -46,7 +46,7 @@ I used a chi square test of independence, the chi2_contingency function, to see 
 
 After doing the test, the p-value is: 2.9795317795864165e-08. This is a very small p-value, so we would reject the null hypothesis and assume there is a relationship between college attended and successful NBA career. 
 
-## The visualizations
+## The Visualizations
 
 ![image](https://user-images.githubusercontent.com/76409576/109405670-9d5a4380-7938-11eb-97f0-2fb18dc489a8.png)
 
@@ -57,6 +57,7 @@ This barplot from Seaborn shows that the average number of years played for not 
 This catplot shows different career lengths and how many players correspond. A hue was added to show the difference between conference attended. 
 
 ![image](https://user-images.githubusercontent.com/76409576/109405685-af3be680-7938-11eb-9d2d-be7e1f4a77ff.png)
+
 This barplot shows that those that had a successful career more often attended a Power 6.
 
 ## The Conclusion
@@ -68,7 +69,7 @@ Some schools, like Gonzaga, are top programs, though they are in a smaller confe
 
 ### Similar Analyses.
 - need to find another similar analysis. check conferences websites perhaps..
-- 
+
 ### Questions Raised.
 It's possible that riding the bench at a Power 6 conference would not correlate as highly as being a starter on the team. Or, if we took out Division 2 and lower schools, would there be a difference in Power 6 Conferences to other Division 1 schools. We could break down the data further to understand these relationships. 
 
