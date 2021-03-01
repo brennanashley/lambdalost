@@ -66,7 +66,7 @@ This catplot shows different career lengths and how many players correspond. A h
 
 ![image](https://user-images.githubusercontent.com/76409576/109405685-af3be680-7938-11eb-9d2d-be7e1f4a77ff.png)
 
-This barplot shows that those that had a successful career more often attended a Power 6.
+This barplot shows that those that had a successful career more often attended a Power 6, about 60% of them do.
 
 ## The Conclusion
 
