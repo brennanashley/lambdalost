@@ -6,7 +6,8 @@ categories: [portfolio, sports]
 title: Does College Predict a Successful NBA Career?
 ---
 # The Relationship Between Attending a Power 6 Conference for Basketball and Having a Successful NBA Career
-
+![image](https://user-images.githubusercontent.com/76409576/110174258-8054c300-7dc5-11eb-8003-9d0cd06df470.png)
+https://en.wikipedia.org/wiki/Air_Jordan
 ---
 
 ## The Intro
