@@ -49,7 +49,7 @@ The dataset only showed the starting and ending year for each player. From here 
 I also created a label for Power Six Conference, and I applied to each row to find who attended a qualifying school. I dropped any row with NAN for college, as we only want to compare those that went. Of the 4248 players included in the dataset that attended a college, 2179 attended a Power 6 conference, while 2069 did not. So 51% of players have attended a Power 6 conference, with 49% going to smaller conferences or Division 2.
 
 ### Statistical Methods
-I used a chi square test of independence, the chi2_contingency function, to see if there was a correlation between Power 6 conference and a successful career in the NBA. Below is a crosstab comparing those that did or did not attend a Power 6 conference and those that did or did not have a successful career.
+Below is a crosstab comparing those that did or did not attend a Power 6 conference and those that did or did not have a successful career. From this, the chi square test can be performed.
 ![image](https://user-images.githubusercontent.com/76409576/109573760-edf6ab80-7ab4-11eb-93b8-4339b497846e.png)
 
 ## The Visualizations and Results
@@ -59,6 +59,7 @@ This barplot from Seaborn shows that the average number of years played for not 
 ![image](https://user-images.githubusercontent.com/76409576/109405682-a64b1500-7938-11eb-8a66-b5206be2b62d.png)
 This catplot shows different career lengths and how many players correspond. A hue was added to show the difference between conference attended. 
 
+I used a chi square test of independence, the chi2_contingency function, to see if there was a correlation between Power 6 conference and a successful career in the NBA. 
 ![image](https://user-images.githubusercontent.com/76409576/109573556-dfa88f80-7ab4-11eb-9fbf-f22549de1097.png)
 After doing the test, the p-value is: 2.9795317795864165e-08. This is a very small p-value, so we would reject the null hypothesis and assume there is a statistically significant relationship between college attended and successful NBA career.
 
