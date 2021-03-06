@@ -39,9 +39,9 @@ The dataset used was found on Kaggle, published by Omri Goldstein. It can be fou
 
 For determining if there is a relationship between attending a Power 6 Conference and having a successful NBA Career, we will use a Chi-Square Test of Interdependence. The hypotheses are as follows:
 
--Ho: There is no relationship between college attended and successful NBA career.
+-Ho: There is no relationship between attending a Power 6 conference and having a successful NBA career.
 
--Ha: There is a relationship between college attended and successful NBA career.
+-Ha: There is a relationship between attendeding a Power 6 conference and having a successful NBA career.
 
 ### Data Wrangling // Feature Engineering
 The dataset only showed the starting and ending year for each player. From here I subtracted the two to calculate the total years played for each player. From here, I found the average NBA career length to be 4.17 years. Then I created a new "Successful Career" to include players that played for at least double the amount of time as an average NBA career, so at least 9 years. Roughly 20% of the players received a “Yes” for “Successful Career”, so this seemed like a fitting measure.
@@ -61,7 +61,7 @@ This catplot shows different career lengths and how many players correspond. A h
 
 I used a chi square test of independence, the chi2_contingency function, to see if there was a correlation between Power 6 conference and a successful career in the NBA. 
 ![image](https://user-images.githubusercontent.com/76409576/109573556-dfa88f80-7ab4-11eb-9fbf-f22549de1097.png)
-After doing the test, the p-value is: 2.9795317795864165e-08. This is a very small p-value, so we would reject the null hypothesis and assume there is a statistically significant relationship between college attended and successful NBA career.
+After doing the test, the p-value is: 2.9795317795864165e-08. This is a very small p-value, so we would reject the null hypothesis and assume there is a statistically significant relationship between attendeding a Power 6 conference and having a successful NBA career.
 
 ![image](https://user-images.githubusercontent.com/76409576/109405685-af3be680-7938-11eb-9d2d-be7e1f4a77ff.png)
 This barplot shows that those that had a successful career more often attended a Power 6, about 60% of them do.
