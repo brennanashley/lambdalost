@@ -9,7 +9,6 @@ I want to inspire other girls to enter the computer science field and enjoy the 
 
 XOXO, Ash
 
-![image](https://user-images.githubusercontent.com/76409576/110192061-85c80280-7df1-11eb-8503-3cf48d905186.png)
 ![image](https://user-images.githubusercontent.com/76409576/110192104-be67dc00-7df1-11eb-8b79-3af0a156382b.png)
 
 
