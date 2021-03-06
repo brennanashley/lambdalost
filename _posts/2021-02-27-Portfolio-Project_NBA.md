@@ -33,7 +33,7 @@ For college basketball, the top conferences are known as the Power 6 Conferences
 
 ## The Data
 
-The dataset used was found on Kaggle, published by Omri Goldstein. The data on this file was scraped from basketball-reference.com. The dataset contains aggregate individual statistics in the NBA since 1950, 67 seasons, from basic box-score attributes such as points, assists, and rebounds to more advanced money-ball like features such as Value Over Replacement. It does not contain data from seasons since 2017.
+The dataset used was found on Kaggle, published by Omri Goldstein. It can be found here: www.kaggle.com/drgilermo/nba-players-stats. The data on this file was scraped from basketball-reference.com. The dataset contains aggregate individual statistics in the NBA since 1950, 67 seasons, from basic box-score attributes such as points, assists, and rebounds to more advanced money-ball like features such as Value Over Replacement. It does not contain data from seasons since 2017.
 
 ## The Statistics
 
@@ -49,24 +49,20 @@ The dataset only showed the starting and ending year for each player. From here 
 I also created a label for Power Six Conference, and I applied to each row to find who attended a qualifying school. I dropped any row with NAN for college, as we only want to compare those that went. Of the 4248 players included in the dataset that attended a college, 2179 attended a Power 6 conference, while 2069 did not. So 51% of players have attended a Power 6 conference, with 49% going to smaller conferences or Division 2.
 
 ### Statistical Methods
-I used a chi square test of independence, the chi2_contingency function, to see if there was a correlation between Power 6 conference and a successful career in the NBA.
+I used a chi square test of independence, the chi2_contingency function, to see if there was a correlation between Power 6 conference and a successful career in the NBA. Below is a crosstab comparing those that did or did not attend a Power 6 conference and those that did or did not have a successful career.
 ![image](https://user-images.githubusercontent.com/76409576/109573760-edf6ab80-7ab4-11eb-93b8-4339b497846e.png)
 
-## The Results
-After doing the test, the p-value is: 2.9795317795864165e-08. This is a very small p-value, so we would reject the null hypothesis and assume there ![image](https://user-images.githubusercontent.com/76409576/109573556-dfa88f80-7ab4-11eb-9fbf-f22549de1097.png)
-
-## The Visualizations
-
+## The Visualizations and Results
 ![image](https://user-images.githubusercontent.com/76409576/109405670-9d5a4380-7938-11eb-97f0-2fb18dc489a8.png)
-
 This barplot from Seaborn shows that the average number of years played for not attending a Power 6 is just under 4, and for attending a Power 6 is just over 4.
 
 ![image](https://user-images.githubusercontent.com/76409576/109405682-a64b1500-7938-11eb-8a66-b5206be2b62d.png)
-
 This catplot shows different career lengths and how many players correspond. A hue was added to show the difference between conference attended. 
 
-![image](https://user-images.githubusercontent.com/76409576/109405685-af3be680-7938-11eb-9d2d-be7e1f4a77ff.png)
+![image](https://user-images.githubusercontent.com/76409576/109573556-dfa88f80-7ab4-11eb-9fbf-f22549de1097.png)
+After doing the test, the p-value is: 2.9795317795864165e-08. This is a very small p-value, so we would reject the null hypothesis and assume there is a statistically significant relationship between college attended and successful NBA career.
 
+![image](https://user-images.githubusercontent.com/76409576/109405685-af3be680-7938-11eb-9d2d-be7e1f4a77ff.png)
 This barplot shows that those that had a successful career more often attended a Power 6, about 60% of them do.
 
 ## The Conclusion
@@ -77,10 +73,10 @@ There, in fact, is a relationship between attending a Power 6 Conference for bas
 Some schools, like Gonzaga, are top programs, though they are in a smaller conference. Adam Morrison, from Gonzaga was one of the top picks in his draft year, although he did become a bust. So it's possible that we could've included these select schools that are outside of the Power 6 conferences, but are still top programs. Also, we could've dropped the years from 1995 to 2005 where attending college wasn't required to join the NBA, this could also alter our data. 
 
 ### Similar Analyses
-- need to find another similar analysis. check conferences websites perhaps..
+A similar analysis by the NCAA showed the differences in being drafted to the NBA from all of Division 1 schools versus the top conferences. It found that 4.2% of draft-eligible Division I players were chosen in the 2019 NBA draft (52 / 1,224). It also showed that 18% of draft-eligible players from the ACC, Big Ten, Big 12, Pac-12, SEC, and Big East conferences were drafted by the NBA in 2019 (41 / 228). (NCAA. “Estimated Probability of Competing in Professional Athletics.” NCAA.org - The Official Site of the NCAA, 20 Apr. 2020, www.ncaa.org/about/resources/research/estimated-probability-competing-professional-athletics.)
 
 ### Questions Raised
-It's possible that riding the bench at a Power 6 conference would not correlate as highly as being a starter on the team. Or, if we took out Division 2 and lower schools, would there be a difference in Power 6 Conferences to other Division 1 schools. We could break down the data further to understand these relationships. 
+It's possible that riding the bench at a Power 6 conference would not correlate as highly as being a starter on the team. Or, if we took out Division 2 and lower schools, there could be less of a difference in Power 6 Conferences to other Division 1 schools. We could break down the data further to understand these relationships. 
 
 ## The Recap
 
