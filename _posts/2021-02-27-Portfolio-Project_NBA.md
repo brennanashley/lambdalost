@@ -16,7 +16,7 @@ Have you ever wondered what are the odds that a player from a small college will
 
 Many times watching the NBA or NFL, I am surprised when the players share the name of the college they attended. I am often expecting to hear nothing but Alabama or Oklahoma for football, and only Kentucky or Duke for basketball. But often, what I hear is not what I expected. So, I wanted to test to see if there is truly a correlation to having a long, successful career and the college attended. If there is, it would make sense to me. But maybe the big school only helps you get into the professional league, and from there everyone has as good of a shot at having a long career. We shall see.
 
-## The Background
+### The Background
 
 Sam Bowie is a name you may or may not know. He was a 7’1 center at Kentucky. He was picked by the Trailblazers in the 1984 NBA draft, the second pick in the first round. He was picked BEFORE Michael Jordan. And he was one of the biggest NBA busts of all time. Tyler Hansborough was a more recent player for UNC, from 2005 to 2009. He was a star in the ACC and was the 13th pick in the 2009 draft to the Pacers. He bounced around from the Pacers to the Raptors to the Hornets for seven years with little playing time before moving to the basketball leagues in China, where he currently plays. On the other hand, the Celtics’ Larry Bird was one of the greatest players of all time, and he attended Indiana State University.
 
@@ -37,7 +37,7 @@ The dataset used was found on Kaggle, published by Omri Goldstein. It can be fou
 
 ## The Statistics
 
-For determining if there is a relationship between attending a Power 6 Conference and having a successful NBA Career, we will use a Chi-Square Test of Interdependence. The hypotheses are as follows:
+For determining if there is a relationship between attending a Power 6 Conference and having a successful NBA Career, we will use a Chi-Square Test of Independence. The hypotheses are as follows:
 
 -Ho: There is no relationship between attending a Power 6 conference and having a successful NBA career.
 
