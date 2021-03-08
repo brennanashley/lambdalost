@@ -61,7 +61,7 @@ This catplot shows different career lengths and how many players correspond. A h
 
 I used a chi square test of independence, the chi2_contingency function, to see if there was a correlation between Power 6 conference and a successful career in the NBA. 
 ![image](https://user-images.githubusercontent.com/76409576/109573556-dfa88f80-7ab4-11eb-9fbf-f22549de1097.png)
-After doing the test, the p-value is: 2.9795317795864165e-08. This is a very small p-value, so we would reject the null hypothesis and assume there is a statistically significant relationship between attendeding a Power 6 conference and having a successful NBA career.
+After doing the test, the p-value is: 2.9795317795864165e-08. This is a very small p-value, so we would reject the null hypothesis and assume there is a statistically significant relationship between attending a Power 6 conference and having a successful NBA career.
 
 ![image](https://user-images.githubusercontent.com/76409576/109405685-af3be680-7938-11eb-9d2d-be7e1f4a77ff.png)
 This barplot shows that those that had a successful career more often attended a Power 6, about 60% of them do.
@@ -73,7 +73,7 @@ There, in fact, is a relationship between attending a Power 6 Conference for bas
 ### Limitations
 Some schools, like Gonzaga, are top programs, though they are in a smaller conference. Adam Morrison, from Gonzaga was one of the top picks in his draft year, although he did become a bust. So it's possible that we could've included these select schools that are outside of the Power 6 conferences, but are still top programs. Also, we could've dropped the years from 1995 to 2005 where attending college wasn't required to join the NBA, this could also alter our data. 
 
-### Similar Analyses
+### Similar Analysis
 A similar analysis by the NCAA showed the differences in being drafted to the NBA from all of Division 1 schools versus the top conferences. It found that 4.2% of draft-eligible Division I players were chosen in the 2019 NBA draft (52 / 1,224). It also showed that 18% of draft-eligible players from the ACC, Big Ten, Big 12, Pac-12, SEC, and Big East conferences were drafted by the NBA in 2019 (41 / 228). (NCAA. “Estimated Probability of Competing in Professional Athletics.” NCAA.org - The Official Site of the NCAA, 20 Apr. 2020, www.ncaa.org/about/resources/research/estimated-probability-competing-professional-athletics.)
 
 ### Questions Raised
