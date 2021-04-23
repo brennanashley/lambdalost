@@ -1,3 +1,10 @@
+---
+toc: true
+layout: post
+description: Portfolio Project Unit 2
+categories: [portfolio, sports]
+title: Can We Classify PGA Tour Wins by Players' Stats?
+
 {
   "nbformat": 4,
   "nbformat_minor": 0,
