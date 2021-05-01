@@ -1,0 +1,1636 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="twitter:card" content="summary_large_image" /><!-- Begin Jekyll SEO tag v2.6.1 -->
+<title>Lambda School Data Science - Unit 1 Sprint 2 | Lambda Lost</title>
+<meta name="generator" content="Jekyll v4.1.1" />
+<meta property="og:title" content="Lambda School Data Science - Unit 1 Sprint 2" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="a girl’s guide to the land of code" />
+<meta property="og:description" content="a girl’s guide to the land of code" />
+<link rel="canonical" href="https://brennanashley.github.io/lambdalost/2021/04/30/_04-30_LS_DS_Unit1_Sprint2.html" />
+<meta property="og:url" content="https://brennanashley.github.io/lambdalost/2021/04/30/_04-30_LS_DS_Unit1_Sprint2.html" />
+<meta property="og:site_name" content="Lambda Lost" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2021-04-30T00:00:00-05:00" />
+<script type="application/ld+json">
+{"url":"https://brennanashley.github.io/lambdalost/2021/04/30/_04-30_LS_DS_Unit1_Sprint2.html","@type":"BlogPosting","headline":"Lambda School Data Science - Unit 1 Sprint 2","dateModified":"2021-04-30T00:00:00-05:00","datePublished":"2021-04-30T00:00:00-05:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://brennanashley.github.io/lambdalost/2021/04/30/_04-30_LS_DS_Unit1_Sprint2.html"},"description":"a girl’s guide to the land of code","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/lambdalost/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="https://brennanashley.github.io/lambdalost/feed.xml" title="Lambda Lost" /><link rel="shortcut icon" type="image/x-icon" href="/lambdalost/images/favicon.ico"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Primer/15.2.0/primer.css" integrity="sha512-xTz2ys4coGAOz8vuV1NcQBkgVmKhsSEtjbqyMJbBHRplFuvKIUo6xhLHpAyPt9mfR6twHJgn9OgVLuqOvjeBhg==" crossorigin="anonymous" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+
+<script>
+function wrap_img(fn) {
+    if (document.attachEvent ? document.readyState === "complete" : document.readyState !== "loading") {
+        var elements = document.querySelectorAll(".post img");
+        Array.prototype.forEach.call(elements, function(el, i) {
+            if (el.getAttribute("title") && (el.className != "emoji")) {
+                const caption = document.createElement('figcaption');
+                var node = document.createTextNode(el.getAttribute("title"));
+                caption.appendChild(node);
+                const wrapper = document.createElement('figure');
+                wrapper.className = 'image';
+                el.parentNode.insertBefore(wrapper, el);
+                el.parentNode.removeChild(el);
+                wrapper.appendChild(el);
+                wrapper.appendChild(caption);
+            }
+        });
+    } else { document.addEventListener('DOMContentLoaded', fn); }
+}
+window.onload = wrap_img;
+</script>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function(){
+    // add link icon to anchor tags
+    var elem = document.querySelectorAll(".anchor-link")
+    elem.forEach(e => (e.innerHTML = '<i class="fas fa-link fa-xs"></i>'));
+    });
+</script>
+</head>
+<body><header class="site-header">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/lambdalost/">Lambda Lost</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/lambdalost/about/">About</a><a class="page-link" href="/lambdalost/search/">Search</a><a class="page-link" href="/lambdalost/categories/">Tags</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title p-name" itemprop="name headline">Lambda School Data Science - Unit 1 Sprint 2</h1><p class="post-meta post-meta-title"><time class="dt-published" datetime="2021-04-30T00:00:00-05:00" itemprop="datePublished">
+        Apr 30, 2021
+      </time>
+       • <span class="read-time" title="Estimated read time">
+    
+    
+      15 min read
+    
+</span></p>
+
+    
+
+    
+      
+        <div class="pb-5 d-flex flex-wrap flex-justify-end">
+          <div class="px-2">
+
+    <a href="https://github.com/brennanashley/lambdalost/tree/master/_notebooks/2021_04-30_LS_DS_Unit1_Sprint2.ipynb" role="button" target="_blank">
+<img class="notebook-badge-image" src="/lambdalost/assets/badges/github.svg" alt="View On GitHub">
+    </a>
+</div>
+
+          <div class="px-2">
+    <a href="https://mybinder.org/v2/gh/brennanashley/lambdalost/master?filepath=_notebooks%2F2021_04-30_LS_DS_Unit1_Sprint2.ipynb" target="_blank">
+        <img class="notebook-badge-image" src="/lambdalost/assets/badges/binder.svg" alt="Open In Binder"/>
+    </a>
+</div>
+
+          <div class="px-2">
+    <a href="https://colab.research.google.com/github/brennanashley/lambdalost/blob/master/_notebooks/2021_04-30_LS_DS_Unit1_Sprint2.ipynb" target="_blank">
+        <img class="notebook-badge-image" src="/lambdalost/assets/badges/colab.svg" alt="Open In Colab"/>
+    </a>
+</div>
+        </div>
+      </header>
+
+  <div class="post-content e-content" itemprop="articleBody">
+    <!--
+#################################################
+### THIS FILE WAS AUTOGENERATED! DO NOT EDIT! ###
+#################################################
+# file to edit: _notebooks/2021_04-30_LS_DS_Unit1_Sprint2.ipynb
+-->
+
+<div class="container" id="notebook-container">
+        
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Autograded-Notebook-(Canvas-&amp;-CodeGrade)">Autograded Notebook (Canvas &amp; CodeGrade)<a class="anchor-link" href="#Autograded-Notebook-(Canvas-&amp;-CodeGrade)"> </a></h2><p>This notebook will be automatically graded. It is designed to test your answers and award points for the correct answers. Following the instructions for each Task carefully.</p>
+<h3 id="Instructions">Instructions<a class="anchor-link" href="#Instructions"> </a></h3><ul>
+<li><strong>Download this notebook</strong> as you would any other ipynb file</li>
+<li><strong>Upload</strong> to Google Colab or work locally (if you have that set-up)</li>
+<li><strong>Delete <code>raise NotImplementedError()</code></strong></li>
+<li>Write your code in the <code># YOUR CODE HERE</code> space</li>
+<li><strong>Execute</strong> the Test cells that contain <code>assert</code> statements - these help you check your work (others contain hidden tests that will be checked when you submit through Canvas)</li>
+<li><strong>Save</strong> your notebook when you are finished</li>
+<li><strong>Download</strong> as a <code>ipynb</code> file (if working in Colab)</li>
+<li><strong>Upload</strong> your complete notebook to Canvas (there will be additional instructions in Slack and/or Canvas)</li>
+</ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Part-A:-Statistical-Analysis">Part A: Statistical Analysis<a class="anchor-link" href="#Part-A:-Statistical-Analysis"> </a></h2><h3 id="Use-the-following-information-to-complete-tasks-1---8">Use the following information to complete tasks 1 - 8<a class="anchor-link" href="#Use-the-following-information-to-complete-tasks-1---8"> </a></h3><h3 id="Dataset-description:">Dataset description:<a class="anchor-link" href="#Dataset-description:"> </a></h3><p>Anyone who is a fan of detective TV shows has watched a scene where human remains are discovered and some sort of expert is called in to determine when the person died. But is this science fiction or science fact? Is it possible to use evidence from skeletal remains to determine how long a body has been buried (a decent approximation of how long the person has been dead)?</p>
+<p>Researchers sampled long bone material from bodies exhumed from coffin burials in two cemeteries in England. In each case, date of death and burial (and therefore interment time) was known. This data is given in the <code>Longbones.csv</code> dataset which you can find <a href="https://github.com/LambdaSchool/data-science-practice-datasets/blob/main/unit_1/Longbones/Longbones.csv">here</a>.</p>
+<p><strong>What can we learn about the bodies that were buried in the cemetery?</strong></p>
+<p>The variable names are:</p>
+<ul>
+<li>Site = Site ID, either Site 1 or Site 2</li>
+<li>Time = Interrment time in years</li>
+<li>Depth = Burial depth in ft.</li>
+<li>Lime = Burial with Quiklime (0 = No, 1 = Yes)</li>
+<li>Age = Age at time of death in years</li>
+<li>Nitro = Nitrogen composition of the long bones in g per 100g of bone.</li>
+<li>Oil = Oil contamination of the grave site (0 = No contamination, 1 = Oil contamination)</li>
+</ul>
+<p><em>Source: D.R. Jarvis (1997). "Nitrogen Levels in Long Bones from Coffin Burials Interred for Periods of 26-90 Years," Forensic Science International, Vol85, pp199-208</em></p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><strong>Task 1</strong> - Load the data</p>
+<p>As we usually begin, let's load the data! The URL has been provided.</p>
+<ul>
+<li>load your CSV file into a DataFrame named <code>df</code></li>
+</ul>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+
+<span class="n">data_url</span> <span class="o">=</span> <span class="s1">&#39;https://raw.githubusercontent.com/LambdaSchool/data-science-practice-datasets/main/unit_1/Longbones/Longbones.csv&#39;</span>
+
+<span class="c1"># YOUR CODE HERE</span>
+<span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="n">data_url</span><span class="p">)</span>
+
+<span class="c1"># Print out your DataFrame</span>
+<span class="n">df</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+
+<div class="output_html rendered_html output_subarea output_execute_result">
+<div>
+<style scoped="">
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Site</th>
+      <th>Time</th>
+      <th>Depth</th>
+      <th>Lime</th>
+      <th>Age</th>
+      <th>Nitro</th>
+      <th>Oil</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>1</td>
+      <td>88.5</td>
+      <td>7.0</td>
+      <td>1</td>
+      <td>NaN</td>
+      <td>3.88</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>1</td>
+      <td>88.5</td>
+      <td>NaN</td>
+      <td>1</td>
+      <td>NaN</td>
+      <td>4.00</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>1</td>
+      <td>85.2</td>
+      <td>7.0</td>
+      <td>1</td>
+      <td>NaN</td>
+      <td>3.69</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>1</td>
+      <td>71.8</td>
+      <td>7.6</td>
+      <td>1</td>
+      <td>65.0</td>
+      <td>3.88</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>1</td>
+      <td>70.6</td>
+      <td>7.5</td>
+      <td>1</td>
+      <td>42.0</td>
+      <td>3.53</td>
+      <td>0</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><strong>Task 1 - Test</strong></p>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">assert</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">df</span><span class="p">,</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">),</span> <span class="s1">&#39;Have you created a DataFrame named `df`?&#39;</span>
+<span class="k">assert</span> <span class="nb">len</span><span class="p">(</span><span class="n">df</span><span class="p">)</span> <span class="o">==</span> <span class="mi">42</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><strong>Task 2</strong> - Missing data</p>
+<p>Now, let's determine if there is any missing data in the dataset. If there is, drop the row that contains a missing value.</p>
+<ul>
+<li>check for missing/null values and assign the sum to <code>num_null</code> - the result should be the sum of all the null values and a single integer (<em>Hint: you will compute the sum of a sum</em>)</li>
+<li>if there are null values, drop them in place (your DataFrame should still be <code>df</code>)</li>
+</ul>
+<p><em>Hint: If you need to go back and update your DataFrame, read in the data again before calculating the null values</em></p>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Hint: Make sure to read in the data again if you re-do you Null calculation</span>
+<span class="c1"># YOUR CODE HERE</span>
+<span class="n">num_null</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">isnull</span><span class="p">()</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span>
+
+
+<span class="n">df</span><span class="o">.</span><span class="n">dropna</span><span class="p">(</span><span class="n">inplace</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">num_null</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>0
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><strong>Task 2 - Test</strong></p>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Hidden tests - you will see the results when you submit to Canvas</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Use-the-following-information-to-complete-tasks-3---8">Use the following information to complete tasks 3 - 8<a class="anchor-link" href="#Use-the-following-information-to-complete-tasks-3---8"> </a></h3><p>The mean nitrogen composition in living individuals is <strong>4.3g per 100g of bone</strong>.</p>
+<p>We wish to use the Longbones sample to test the null hypothesis that the mean nitrogen composition per 100g of bone in the deceased is 4.3g (equal to that of living humans) vs the alternative hypothesis that the mean nitrogen composition per 100g of bone in the deceased is not 4.3g (not equal to that of living humans).</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><strong>Task 3 -</strong> Statistical hypotheses</p>
+<p>Write the null and alternative hypotheses described above.</p>
+<p>This task will not be autograded - but it is part of completing the challenge.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><strong>Task 3 ANSWER:</strong></p>
+<p>$H_0: \mu =$ 4.3g</p>
+<p>$H_a: \mu \neq$ 4.3g</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><strong>Task 4</strong> - Statistical distributions</p>
+<p>What is the appropriate test for these hypotheses?  A t-test or a chi-square test?  Explain your answer in a sentence or two.</p>
+<p>This task will not be autograded - but it is part of completing the challenge.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><strong>Task 4 ANSWER:</strong></p>
+<p>We want a t-test because we're going to compare a mean from our sample data to a known value, 4.3g/100g. A chi-square test compares if two groups are related/correlated.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><strong>Task 5</strong> - Hypothesis testing</p>
+<p>Use a built-in Python function to conduct the statistical test you identified earlier. The scipy stats module has been imported.</p>
+<ul>
+<li>Assign the t statistic to the variable <code>t</code> </li>
+<li>Assign the p-value to the variable <code>p</code></li>
+</ul>
+<p><em>Hint: Review the documentation to verify what it returns. You can assign the two variables in one step or two steps.</em></p>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Use this import for your calculation</span>
+<span class="kn">from</span> <span class="nn">scipy</span> <span class="kn">import</span> <span class="n">stats</span>
+
+<span class="c1"># YOUR CODE HERE</span>
+<span class="n">t</span><span class="p">,</span> <span class="n">p</span> <span class="o">=</span> <span class="n">stats</span><span class="o">.</span><span class="n">ttest_1samp</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;Nitro&#39;</span><span class="p">],</span> <span class="mf">4.3</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">t</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">p</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>-16.525765821830365
+8.097649978903554e-18
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><strong>Task 5 Test</strong></p>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Hidden tests - you will see the results when you submit to Canvas</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><strong>Task 6</strong> - Conclusion</p>
+<p>What is the p-value for this hypothesis test.  Do you reject or fail to reject the null hypothesis at the 0.05 level?</p>
+<p>This task will not be autograded - but it is part of the project!</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><strong>Task 6 ANSWER:</strong></p>
+<p>The p-value is 8.1*10^-18. Since that is less than the .05 significance level, we reject the null hypothesis and conclude that the alternative hypothesis is correct(that the mean nitrogen level per 100 g of bone in the deceased is not 4.3g)</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><strong>Task 7</strong> - Confidence Interval</p>
+<p>Calculate a 95% confidence interval for the mean nitrogen composition in the longbones of a deceased individual using the t.interval function.</p>
+<ul>
+<li>Assign the lower end of the confidence interval to the variable <code>l</code> </li>
+<li>Assign the upper end of the confidence interval to the variable <code>u</code></li>
+</ul>
+<p><em>Hint: You will need to calculate other statistics to complete the confidence interval calculation. These variables can be named whatever you like - just make sure to name your confidence interval variables as specified above.</em></p>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Use this import for your calculation</span>
+<span class="kn">from</span> <span class="nn">scipy.stats</span> <span class="kn">import</span> <span class="n">t</span>
+
+<span class="c1"># YOUR CODE HERE</span>
+
+<span class="n">mean</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="s1">&#39;Nitro&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span>
+<span class="n">sd</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="s1">&#39;Nitro&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">std</span><span class="p">()</span>
+<span class="n">n</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="s1">&#39;Nitro&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">count</span><span class="p">()</span>
+<span class="n">se</span> <span class="o">=</span> <span class="n">sd</span><span class="o">/</span><span class="p">(</span><span class="n">n</span><span class="o">**</span><span class="p">(</span><span class="mi">1</span><span class="o">/</span><span class="mi">2</span><span class="p">))</span>
+<span class="n">l</span><span class="p">,</span> <span class="n">u</span> <span class="o">=</span> <span class="n">t</span><span class="o">.</span><span class="n">interval</span><span class="p">(</span><span class="n">alpha</span><span class="o">=</span><span class="mf">0.95</span><span class="p">,</span> <span class="n">df</span><span class="o">=</span><span class="mi">34</span><span class="p">,</span> <span class="n">loc</span><span class="o">=</span><span class="n">mean</span><span class="p">,</span> <span class="n">scale</span><span class="o">=</span><span class="n">se</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">l</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">u</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>3.734020952024922
+3.8579790479750784
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><strong>Task 7 Test</strong></p>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Hidden tests - you will see the results when you submit to Canvas</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><strong>Task 8</strong> - Conclusion</p>
+<p>Write an interpretation of your 95% confidence interval.</p>
+<p>This task will not be autograded - but it is part of completing the challenge.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><strong>Task 8 ANSWER:</strong></p>
+<p>We are 95% sure that the mean nitrogen level per 100 g in the deceased is between 3.73 and 3.86</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Part-B:-A/B-Testing">Part B: A/B Testing<a class="anchor-link" href="#Part-B:-A/B-Testing"> </a></h2><h3 id="Use-the-following-information-to-complete-tasks-9---18">Use the following information to complete tasks 9 - 18<a class="anchor-link" href="#Use-the-following-information-to-complete-tasks-9---18"> </a></h3>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="A/B-Testing-and-Udacity">A/B Testing and Udacity<a class="anchor-link" href="#A/B-Testing-and-Udacity"> </a></h3><p>Udacity is an online learning platform geared toward tech professionals who want to develop skills in programming, data science, etc.  These classes are intensive - both for the students and instructors - and the learning experience is best when students are able to dedicate enough time to the classes and there is not a lot of student churn.</p>
+<p>Udacity wished to determine if presenting potential students with a screen that would remind them of the time commitment involved in taking a class would decrease the enrollment of students who were unlikely to succeed in the class.</p>
+<p>At the time of the experiment, when a student selected a course, she was taken to the course overview page and presented with two options: "start free trial", and "access course materials".</p>
+<p>If the student clicked "start free trial", she was asked to enter her credit card information and was enrolled in a free trial for the paid version of the course (which would covert to a paid membership after 14 days).</p>
+<p>If the student clicked "access course materials", she could view the videos and take the quizzes for free but could not access all the features of the course such as coaching.</p>
+<p><em>Credit</em>: <a href="https://https://www.udacity.com/course/ab-testing--ud257?irclickid=W0WQs22htxyLTIxwUx0Mo3YgUkEzM2Rn81NW2g0&amp;irgwc=1&amp;utm_source=affiliate&amp;utm_medium=&amp;aff=27795&amp;utm_campaign=_khm68yp1xv02l1pj0mzy8__">Udacity A/B testing final project example</a></p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><strong>Here's the experiment:</strong> Udacity tested a change where if the student clicked "start free trial", she was asked how much time she had available to devote to the course.</p>
+<p>If the student indicated 5 or more hours per week, she would be taken through the checkout process as usual. If she indicated fewer than 5 hours per week, a message would appear indicating that Udacity courses usually require a greater time commitment for successful completion and suggesting that the student might like to access the course materials for free.</p>
+<p>At this point, the student would have the option to continue enrolling in the free trial, or access the course materials for free instead.</p>
+<p><strong>Now we wish to see if there was an association between the screen the potential student viewed and whether or not the student enrolled in the paid version of the course.</strong></p>
+<p>The Udacity data is linked below and is in a non-tidy format.  We'll be focusing on the number of enrolling customers who convert to paying customers.</p>
+<p>You don't need to do anything with the <strong>non-tidy</strong> data in this Challenge; we're sharing it here so you can get an idea of what data looks like <em>before</em> we clean it.</p>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+
+<span class="c1"># Load data</span>
+<span class="n">data_url</span> <span class="o">=</span> <span class="s1">&#39;https://raw.githubusercontent.com/LambdaSchool/data-science-practice-datasets/main/unit_1/Udacity%20AB%20testing</span><span class="si">%20d</span><span class="s1">ata/AB%20testing</span><span class="si">%20d</span><span class="s1">ata.csv&#39;</span>
+<span class="n">ABtest_</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="n">data_url</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">ABtest_</span><span class="o">.</span><span class="n">shape</span><span class="p">)</span>
+<span class="n">ABtest_</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>(999, 10)
+</pre>
+</div>
+</div>
+
+<div class="output_area">
+
+
+<div class="output_html rendered_html output_subarea output_execute_result">
+<div>
+<style scoped="">
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Date</th>
+      <th>C-Pageviews</th>
+      <th>C-Clicks</th>
+      <th>C-Enrollments</th>
+      <th>C-Payments</th>
+      <th>E-Pageviews</th>
+      <th>E-Clicks</th>
+      <th>E-Enrollments</th>
+      <th>E-Payments</th>
+      <th>Unnamed: 9</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>Sat, Oct 11</td>
+      <td>7723.0</td>
+      <td>687.0</td>
+      <td>134.0</td>
+      <td>70.0</td>
+      <td>7716.0</td>
+      <td>686.0</td>
+      <td>105.0</td>
+      <td>34.0</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>Sun, Oct 12</td>
+      <td>9102.0</td>
+      <td>779.0</td>
+      <td>147.0</td>
+      <td>70.0</td>
+      <td>9288.0</td>
+      <td>785.0</td>
+      <td>116.0</td>
+      <td>91.0</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>Mon, Oct 13</td>
+      <td>10511.0</td>
+      <td>909.0</td>
+      <td>167.0</td>
+      <td>95.0</td>
+      <td>10480.0</td>
+      <td>884.0</td>
+      <td>145.0</td>
+      <td>79.0</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>Tue, Oct 14</td>
+      <td>9871.0</td>
+      <td>836.0</td>
+      <td>156.0</td>
+      <td>105.0</td>
+      <td>9867.0</td>
+      <td>827.0</td>
+      <td>138.0</td>
+      <td>92.0</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>Wed, Oct 15</td>
+      <td>10014.0</td>
+      <td>837.0</td>
+      <td>163.0</td>
+      <td>64.0</td>
+      <td>9793.0</td>
+      <td>832.0</td>
+      <td>140.0</td>
+      <td>94.0</td>
+      <td>NaN</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Now, here is the enrollment and payment data in tidy format.  You can see how I set it up <a href="https://colab.research.google.com/drive/1eSOjXoj9MpO04h24wnHXRWGE2jhuhw65?usp=sharing">here</a>.</p>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">data_url</span> <span class="o">=</span> <span class="s1">&#39;https://raw.githubusercontent.com/LambdaSchool/data-science-practice-datasets/main/unit_1/Udacity%20AB%20testing</span><span class="si">%20d</span><span class="s1">ata/AB_test_payments.csv&#39;</span>
+
+<span class="n">ABtest</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="n">data_url</span><span class="p">,</span> <span class="n">skipinitialspace</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">header</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">ABtest</span><span class="o">.</span><span class="n">shape</span><span class="p">)</span>
+<span class="n">ABtest</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>(7208, 3)
+</pre>
+</div>
+</div>
+
+<div class="output_area">
+
+
+<div class="output_html rendered_html output_subarea output_execute_result">
+<div>
+<style scoped="">
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>UserID</th>
+      <th>Group</th>
+      <th>Payment</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>0</td>
+      <td>Control</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>1</td>
+      <td>Control</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>2</td>
+      <td>Control</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>3</td>
+      <td>Control</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>4</td>
+      <td>Control</td>
+      <td>1</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Dataset-information">Dataset information<a class="anchor-link" href="#Dataset-information"> </a></h3><p>The "tidy" data has the following values for the columns:</p>
+<ul>
+<li>Group = Control or Experimental depending on the screen viewed</li>
+<li>Payment = 0 if the individual did not not enroll as a paying customer, 1 = if the individual did enroll as a paying customer</li>
+</ul>
+<p><strong>Our goal is to determine if there is an association between the screen that a potential student viewed as she was signing up for a course and whether or not she converted to a paying customer.</strong></p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><strong>Task 9</strong> - Statistical hypotheses</p>
+<p>Write the null and alternative hypothesis to test if there is an association between the screen that a potential student viewed as she was signing up for a course and whether or not he or she converted to a paying customer.</p>
+<p>This task will not be autograded - but it is part of completing the challenge.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><strong>Task 9 ANSWER:</strong></p>
+<p><strong>Ho:</strong> There is no relationship between the screen viewed and converting to a paying customer.</p>
+<p><strong>Ha:</strong> There is a relationship between the screen viewed and conterving to a paying customer.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><strong>Task 10</strong> - Frequency and relative frequency</p>
+<p>Calculate the frequency and relative frequency of viewing the control version of the website and the experimental version of the website.</p>
+<ul>
+<li>Use <code>pd.crosstab()</code></li>
+<li>Assign the frequency table the name <code>group_freq</code></li>
+<li>Assign the relative frequency table the name <code>group_pct</code>.  Multiply by 100 to convert the proportions in the table to percents.</li>
+</ul>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># YOUR CODE HERE</span>
+<span class="n">group_freq</span> <span class="o">=</span> <span class="n">ABtest</span><span class="p">[</span><span class="s1">&#39;Group&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">value_counts</span><span class="p">()</span>
+<span class="n">group_pct</span> <span class="o">=</span> <span class="n">ABtest</span><span class="p">[</span><span class="s1">&#39;Group&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">value_counts</span><span class="p">(</span><span class="n">normalize</span> <span class="o">=</span> <span class="kc">True</span><span class="p">)</span><span class="o">*</span><span class="mi">100</span>
+
+<span class="c1">#group_freq = pd.crosstab(ABtest[&#39;Group&#39;])</span>
+<span class="c1">#group_pct = pd.crosstab(ABtest[&#39;Group&#39;],normalize = True)*100</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">group_freq</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">group_pct</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Control       3785
+Experiment    3423
+Name: Group, dtype: int64
+Control       52.511099
+Experiment    47.488901
+Name: Group, dtype: float64
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><strong>Task 10 Test</strong></p>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Hidden tests - you will see the results when you submit to Canvas</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><strong>Task 11</strong> - Frequency and relative frequency</p>
+<p>Calculate the frequency and relative frequency of converting to a paying customer.</p>
+<ul>
+<li>Use <code>pd.crosstab()</code></li>
+<li>Assign the frequency table the name <code>pay_freq</code></li>
+<li>Assign the relative frequency table the name <code>pay_pct</code>.  Multiply by 100 to convert the proportions in the table to percents.</li>
+</ul>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># YOUR CODE HERE</span>
+<span class="n">pay_freq</span> <span class="o">=</span> <span class="n">ABtest</span><span class="p">[</span><span class="s1">&#39;Payment&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">value_counts</span><span class="p">()</span>
+<span class="n">pay_pct</span> <span class="o">=</span> <span class="n">ABtest</span><span class="p">[</span><span class="s1">&#39;Payment&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">value_counts</span><span class="p">(</span><span class="n">normalize</span> <span class="o">=</span> <span class="kc">True</span><span class="p">)</span><span class="o">*</span><span class="mi">100</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">pay_freq</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">pay_pct</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>1    3978
+0    3230
+Name: Payment, dtype: int64
+1    55.188679
+0    44.811321
+Name: Payment, dtype: float64
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><strong>Task 11 Test</strong></p>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Hidden tests - you will see the results when you submit to Canvas</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><strong>Task 12</strong> - Joint distribution</p>
+<p>Calculate the joint distribution of experimental condition and conversion to a paying customer.</p>
+<ul>
+<li>Use the experimental group as the index variable</li>
+<li>Name the results of the joint distribution <code>joint_dist</code></li>
+</ul>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># YOUR CODE HERE</span>
+<span class="n">joint_dist</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">crosstab</span><span class="p">(</span><span class="n">index</span> <span class="o">=</span> <span class="n">ABtest</span><span class="p">[</span><span class="s1">&#39;Group&#39;</span><span class="p">],</span> <span class="n">columns</span><span class="o">=</span><span class="n">ABtest</span><span class="p">[</span><span class="s1">&#39;Payment&#39;</span><span class="p">])</span>
+<span class="n">joint_dist</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+
+<div class="output_html rendered_html output_subarea output_execute_result">
+<div>
+<style scoped="">
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Payment</th>
+      <th>0</th>
+      <th>1</th>
+    </tr>
+    <tr>
+      <th>Group</th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>Control</th>
+      <td>1752</td>
+      <td>2033</td>
+    </tr>
+    <tr>
+      <th>Experiment</th>
+      <td>1478</td>
+      <td>1945</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><strong>Task 12 Test</strong></p>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Hidden tests - you will see the results when you submit to Canvas</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><strong>Task 13</strong> - Marginal distribution</p>
+<p>Add the table margins to the joint distribution of experimental condition and conversion to a paying customer.</p>
+<ul>
+<li>Use the experimental group as the index variable</li>
+<li>Name the results of the distribution <code>marginal_dist</code></li>
+</ul>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># YOUR CODE HERE</span>
+<span class="n">marginal_dist</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">crosstab</span><span class="p">(</span><span class="n">index</span> <span class="o">=</span> <span class="n">ABtest</span><span class="p">[</span><span class="s1">&#39;Group&#39;</span><span class="p">],</span> <span class="n">columns</span><span class="o">=</span><span class="n">ABtest</span><span class="p">[</span><span class="s1">&#39;Payment&#39;</span><span class="p">],</span> <span class="n">margins</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<span class="n">marginal_dist</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+
+<div class="output_html rendered_html output_subarea output_execute_result">
+<div>
+<style scoped="">
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Payment</th>
+      <th>0</th>
+      <th>1</th>
+      <th>All</th>
+    </tr>
+    <tr>
+      <th>Group</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>Control</th>
+      <td>1752</td>
+      <td>2033</td>
+      <td>3785</td>
+    </tr>
+    <tr>
+      <th>Experiment</th>
+      <td>1478</td>
+      <td>1945</td>
+      <td>3423</td>
+    </tr>
+    <tr>
+      <th>All</th>
+      <td>3230</td>
+      <td>3978</td>
+      <td>7208</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><strong>Task 13 Test</strong></p>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Hidden tests - you will see the results when you submit to Canvas</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><strong>Task 14 -</strong> Conditional distribution</p>
+<p>Calculate the distribution of payment conversion conditional on the text the individual saw when he or she was signing up for Udacity.</p>
+<ul>
+<li>Use the experimental group as the index variable</li>
+<li>Name the results of the distribution <code>conditional_dist</code> and <strong>make sure to multiple the result by 100</strong></li>
+</ul>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># YOUR CODE HERE</span>
+<span class="n">conditional_dist</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">crosstab</span><span class="p">(</span><span class="n">index</span><span class="o">=</span><span class="n">ABtest</span><span class="p">[</span><span class="s2">&quot;Group&quot;</span><span class="p">],</span> <span class="n">columns</span><span class="o">=</span><span class="n">ABtest</span><span class="p">[</span><span class="s2">&quot;Payment&quot;</span><span class="p">],</span><span class="n">normalize</span><span class="o">=</span><span class="s2">&quot;index&quot;</span><span class="p">)</span><span class="o">*</span><span class="mi">100</span>
+<span class="n">conditional_dist</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+
+<div class="output_html rendered_html output_subarea output_execute_result">
+<div>
+<style scoped="">
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Payment</th>
+      <th>0</th>
+      <th>1</th>
+    </tr>
+    <tr>
+      <th>Group</th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>Control</th>
+      <td>46.287979</td>
+      <td>53.712021</td>
+    </tr>
+    <tr>
+      <th>Experiment</th>
+      <td>43.178498</td>
+      <td>56.821502</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><strong>Task 14 Test</strong></p>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Hidden tests - you will see the results when you submit to Canvas</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><strong>Task 15</strong> - Statistical distributions</p>
+<p>Identify the appropriate statistical test to determine if there is an association between the screen that a potential student viewed as she was signing up for a course and whether or not he or she converted to a paying customer.</p>
+<p>This task will not be autograded - but it is part of completing the challenge.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><strong>Task 15 ANSWER:</strong></p>
+<p>It is appropriate to use the chi squared test because we're seeing if there is a correlation between two things(categorical variables), screen viewed and becoming a paying customer.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><strong>Task 16</strong> - Hypothesis testing</p>
+<p>Conduct the hypothesis test you identified in Task 15.</p>
+<ul>
+<li>Assign the p-value to the variable <code>p</code></li>
+</ul>
+<p><em>Hint: The <code>chi2_contingency()</code> function returns more than one parameter - make sure to read the documentation to assign the correct one to your p-value</em></p>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">scipy.stats</span> <span class="kn">import</span> <span class="n">chi2_contingency</span>
+
+<span class="c1"># YOUR CODE HERE</span>
+<span class="n">g</span><span class="p">,</span> <span class="n">p</span><span class="p">,</span> <span class="n">dof</span><span class="p">,</span> <span class="n">expctd</span> <span class="o">=</span> <span class="n">chi2_contingency</span><span class="p">(</span><span class="n">pd</span><span class="o">.</span><span class="n">crosstab</span><span class="p">(</span><span class="n">index</span><span class="o">=</span><span class="n">ABtest</span><span class="p">[</span><span class="s2">&quot;Group&quot;</span><span class="p">],</span> <span class="n">columns</span><span class="o">=</span><span class="n">ABtest</span><span class="p">[</span><span class="s2">&quot;Payment&quot;</span><span class="p">]))</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">p</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>0.008608736615463934
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><strong>Task 16 Test</strong></p>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Hidden tests - you will see the results when you submit to Canvas</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><strong>Task 17</strong> - Conclusions</p>
+<p>Do you reject or fail to reject the null hypothesis at the 0.05 significance level?</p>
+<p>This task will not be autograded - but it is part of completing the challenge.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><strong>Task 17 ANSWER:</strong></p>
+<p>0.008&lt;0.05, so we reject the null hypothesis and conclude that the alternative hypothesis is correct, that there is a statistically significant relationship between the screen viewed and converting to a paying customer.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><strong>Task 18</strong> - Visualization</p>
+<p>Draw a side-by-side boxplot illustrating the conditional distribution of conversion by experimental group.</p>
+<p>This task will not be autograded - but it is part of completing the challenge.</p>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+<span class="kn">import</span> <span class="nn">seaborn</span> <span class="k">as</span> <span class="nn">sns</span>
+
+<span class="c1"># YOUR CODE HERE</span>
+<span class="n">sns</span><span class="o">.</span><span class="n">barplot</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="s1">&#39;Group&#39;</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="s1">&#39;Payment&#39;</span><span class="p">,</span> <span class="n">data</span> <span class="o">=</span> <span class="n">ABtest</span><span class="p">,</span> <span class="n">ci</span> <span class="o">=</span> <span class="kc">None</span><span class="p">);</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+
+
+<div class="output_png output_subarea ">
+<img src="data:image/png;base64,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
+" />
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><strong>Task 19</strong> - Bayesian and Frequentist Statistics</p>
+<p>In a few sentences, describe the difference between Bayesian and Frequentist statistics.</p>
+<p>This task will not be autograded - but it is part of completing the challenge.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><strong>Task 19 ANSWER:</strong></p>
+<p>Bayesian Statistics looks at prior belief in addition to data, whereas Frequentist Statistics only uses the data as a source of information. Frequentist uses fixed parameters and looks at long run frequency to determine the probability. Bayesian uses random variables and probability is defined by degree of belief.</p>
+
+</div>
+</div>
+</div>
+</div>
+
+
+
+  </div><a class="u-url" href="/lambdalost/2021/04/30/_04-30_LS_DS_Unit1_Sprint2.html" hidden></a>
+</article>
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/lambdalost/"></data>
+
+  <div class="wrapper">
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col">
+        <p class="feed-subscribe">
+          <a href="/lambdalost/feed.xml">
+            <svg class="svg-icon orange">
+              <use xlink:href="/lambdalost/assets/minima-social-icons.svg#rss"></use>
+            </svg><span>Subscribe</span>
+          </a>
+        </p>
+      </div>
+      <div class="footer-col">
+        <p>a girl&#39;s guide to the land of code</p>
+      </div>
+    </div>
+
+    <div class="social-links"><ul class="social-media-list"><li><a rel="me" href="https://github.com/brennanashley" title="brennanashley"><svg class="svg-icon grey"><use xlink:href="/lambdalost/assets/minima-social-icons.svg#github"></use></svg></a></li><li><a rel="me" href="https://www.instagram.com/ashbrennan15" title="ashbrennan15"><svg class="svg-icon grey"><use xlink:href="/lambdalost/assets/minima-social-icons.svg#instagram"></use></svg></a></li></ul>
+</div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>
